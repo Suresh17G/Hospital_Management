@@ -43,7 +43,6 @@ public class HospitalServiceImpl implements IHospitalService {
 	@Override
 	public List<appointment> getAppointmentsForPatient(int patientID) {
 		List<appointment> appointmentList = new ArrayList<>();
-		;
 		String sql = "SELECT * FROM appointment WHERE patientID = ?";
 		try (PreparedStatement ps = connection.prepareStatement(sql)) {
 			ps.setInt(1, patientID);
@@ -65,7 +64,6 @@ public class HospitalServiceImpl implements IHospitalService {
 	@Override
 	public List<appointment> getAppointmentsForDoctor(int doctorID) {
 		List<appointment> appointmentList = new ArrayList<>();
-		;
 		String sql = "SELECT * FROM appointment WHERE doctorID = ?";
 		try (PreparedStatement ps = connection.prepareStatement(sql)) {
 			ps.setInt(1, doctorID);
