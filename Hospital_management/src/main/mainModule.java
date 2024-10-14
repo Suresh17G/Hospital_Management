@@ -20,7 +20,7 @@ public class mainModule {
 		try {
 			while (true) {
 
-				System.out.println("Hospital Management Menu: \n");
+				System.out.println("\nHospital Management Menu: \n");
 				System.out.println("1) Search Appointments by their ID ");
 				System.out.println("2) Search Appointments for a patient ");
 				System.out.println("3) Search Appointments for a doctor ");
@@ -64,7 +64,7 @@ public class mainModule {
 				}
 			}
 		} catch (Exception e) {
-			System.out.println("Unknown Error: " + e.getMessage() + "\nExiting Hospital Management");
+			System.out.println("\nUnexpected Error: " + e + "\nExiting Hospital Management!!");
 		}
 	}
 
